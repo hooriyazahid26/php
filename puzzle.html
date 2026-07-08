@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.game-container{
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 10px;
+}
+
+input[type="submit"]{
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CA450;
+    columns: white;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"][value=""]{
+
+     background-color: #ccc;
+}
+
+</style>
+<body>
+    <div class="game-container"></div>
+    <h2>PUZZLE GAME</h2>
+    <form action="puzzle.php" method="get" class="btn-grid">
+        <input type="hidden" name="bh1" value="1">
+        <input type="submit" name="b1" value="1">
+
+        <input type="hidden" name="bh2" value="2">
+        <input type="submit" name="b2" value="2">
+
+        <input type="hidden" name="bh3" value="3">
+        <input type="submit" name="b3" value="3">
+
+        <input type="hidden" name="bh4" value="4">
+        <input type="submit" name="b4" value="4">
+        
+        <input type="hidden" name="bh5" value="5">
+        <input type="submit" name="b5" value="5">
+
+        <input type="hidden" name="bh6" value="6">
+        <input type="submit" name="b6" value="6">
+        
+        <input type="hidden" name="bh7" value="7">
+        <input type="submit" name="b7" value="7">
+
+        <input type="hidden" name="bh8" value="8">
+        <input type="submit" name="b8" value="8">
+
+        <input type="hidden" name="bh9" value="9">
+        <input type="submit" name="b9" value="9">
+
+        <input type="hidden" name="bh10" value="10">
+        <input type="submit" name="b10" value="10">
+
+        <input type="hidden" name="bh11" value="11">
+        <input type="submit" name="b11" value="11">
+
+        
+        
+        <input type="hidden" name="bh12" value="">
+        <input type="submit" name="b12" value="">
+    </form>
+    <script>
+let num =(0,0,0,0);
+checkwin(checkwin("you won this game"));
+
+
+
+    </script>
+
+</body>
+</html>
